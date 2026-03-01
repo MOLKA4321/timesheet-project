@@ -1,6 +1,6 @@
 package tn.esprit.spring.entities;
 
-
+// Modification sur la branche user-management
 import java.io.Serializable;
 import java.util.Date;
 
