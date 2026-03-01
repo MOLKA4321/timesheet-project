@@ -92,3 +92,4 @@ public class User implements Serializable {
 
 }
 // Commentaire depuis feature-comment
+// Commentaire B
