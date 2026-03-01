@@ -97,3 +97,4 @@ public class User implements Serializable {
 =======
 // Commentaire B
 >>>>>>> feature-b
+// Commentaire B
