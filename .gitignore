@@ -1,0 +1,18 @@
+# Maven / build
+target/
+.mvn/
+mvnw
+mvnw.cmd
+
+# IDE (IntelliJ, Eclipse, VS Code)
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+
+# Fichiers Windows / téléchargements
+*:Zone.Identifier
+
+# Logs et temporaires
+*.log
