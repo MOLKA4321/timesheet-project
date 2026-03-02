@@ -20,3 +20,4 @@ The following guides illustrate how to use some features concretely:
 * [Building REST services with Spring](https://spring.io/guides/tutorials/bookmarks/)
 
 \nCheckpoint validé le 2026-03-02 13:14
+\nTest branche feature-test - Mon Mar  2 13:18:38 CET 2026
