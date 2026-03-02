@@ -31,21 +31,10 @@ public class User implements Serializable {
     @Enumerated(EnumType.STRING)
     private Role role;
 
-    // Constructeur vide
     public User() {
     }
 
-    // Constructeur avec paramètres (sans id)
     public User(String firstName, String lastName, Date dateNaissance, Role role) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.dateNaissance = dateNaissance;
-        this.role = role;
-    }
-
-    // Constructeur avec id (pour tests ou mises à jour)
-    public User(Long id, String firstName, String lastName, Date dateNaissance, Role role) {
-        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.dateNaissance = dateNaissance;
@@ -54,53 +43,23 @@ public class User implements Serializable {
 
     @Override
     public String toString() {
-        return "User [id=" + id + ", firstName=" + firstName + 
-               ", lastName=" + lastName + ", dateNaissance=" + dateNaissance + 
+        return "User [id=" + id + ", firstName=" + firstName +
+               ", lastName=" + lastName + ", dateNaissance=" + dateNaissance +
                ", role=" + role + "]";
     }
 
-    // Getters et Setters
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
 
-    public Long getId() {
-        return id;
-    }
+    public String getFirstName() { return firstName; }
+    public void setFirstName(String firstName) { this.firstName = firstName; }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    public String getLastName() { return lastName; }
+    public void setLastName(String lastName) { this.lastName = lastName; }
 
-    public String getFirstName() {
-        return firstName;
-    }
+    public Date getDateNaissance() { return dateNaissance; }
+    public void setDateNaissance(Date dateNaissance) { this.dateNaissance = dateNaissance; }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public Date getDateNaissance() {
-        return dateNaissance;
-    }
-
-    public void setDateNaissance(Date dateNaissance) {
-        this.dateNaissance = dateNaissance;
-    }
-
-    public Role getRole() {
-        return role;
-    }
-
-    public void setRole(Role role) {
-        this.role = role;
-    }
-
-    // Commentaire depuis la branche principale (après résolution du conflit)
-    // Commentaire A et B fusionnés → on garde les deux ou on choisit
+    public Role getRole() { return role; }
+    public void setRole(Role role) { this.role = role; }
 }
